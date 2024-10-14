@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+botania-client.toml
+	line 8 :: Disabled main menu splashes (true -> false)
+	line 12 :: Disabled shaders (true -> false)
+	line 16 :: Disabled rendoring accessories (true -> false)
