@@ -36,6 +36,9 @@ os.makedirs(INSTANCE_DIRECTORY)
 # Copy core files to instance directory
 INSTANCE_CORE_DIRECTORY = PROJECT_DIRECTORY + '\\1 - Instance Core'
 shutil.copytree(INSTANCE_CORE_DIRECTORY, INSTANCE_DIRECTORY, dirs_exist_ok=True)
+core_changelog_filepath = INSTANCE_DIRECTORY + '\\config\\_changelog.txt'
+if os.path.isfile(core_changelog_filepath):
+    os.remove(core_changelog_filepath)
 log_info('Added core instance files')
 
 # Generate mod lists
@@ -98,7 +101,7 @@ SHADER_PACKS_DIRECTORY = PROJECT_DIRECTORY + '\\6 - Shader Packs'
 shutil.copytree(SHADER_PACKS_DIRECTORY, INSTANCE_DIRECTORY + '\\shaderpacks', dirs_exist_ok=True)
 log_info('Added shader pack files ')
 
-
-print()
-print('[WARNING] The following dependency mods included in the project are not required')
-print(unused_mods)
+if len(unused_mods) > 0:
+    print()
+    print('[WARNING] The following dependency mods included in the project are not required')
+    print(unused_mods)

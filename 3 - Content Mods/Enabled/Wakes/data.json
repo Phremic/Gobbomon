@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": false,
+	"Dependencies": [
+		"Connector Extras",
+		"Forgified Fabric API",
+		"Sinytra Connector"
+	]
+}

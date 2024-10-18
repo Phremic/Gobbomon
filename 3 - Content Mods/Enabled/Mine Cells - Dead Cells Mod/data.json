@@ -1,0 +1,10 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Connector Extras",
+		"Forgified Fabric API",
+		"owo (owo-lib)",
+		"Sinytra Connector"
+	]
+}
