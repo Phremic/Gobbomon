@@ -31,15 +31,19 @@ log_info('Root directory: ' + ROOT_DIRECTORY)
 INSTANCE_DIRECTORY = ROOT_DIRECTORY + '\\instances\\' + PROJECT_NAME
 if os.path.exists(INSTANCE_DIRECTORY):
     shutil.rmtree(INSTANCE_DIRECTORY)
+    log_info('Removed existing instances directory')
 os.makedirs(INSTANCE_DIRECTORY)
 
 # Copy core files to instance directory
 INSTANCE_CORE_DIRECTORY = PROJECT_DIRECTORY + '\\1 - Instance Core'
 shutil.copytree(INSTANCE_CORE_DIRECTORY, INSTANCE_DIRECTORY, dirs_exist_ok=True)
+log_info('Added core instance files')
+
+# Remove instance core config changelog file from new instance
 core_changelog_filepath = INSTANCE_DIRECTORY + '\\config\\_changelog.txt'
 if os.path.isfile(core_changelog_filepath):
     os.remove(core_changelog_filepath)
-log_info('Added core instance files')
+    log_info('Removed forge mod loader changelog file from instance')
 
 # Generate mod lists
 CONTENT_MODS_DIRECTORY = PROJECT_DIRECTORY + '\\3 - Content Mods\\Enabled'
@@ -92,14 +96,14 @@ for mod in content_mods:
 
 RESOURCE_PACKS_DIRECTORY = PROJECT_DIRECTORY + '\\5 - Resource Packs'
 shutil.copytree(RESOURCE_PACKS_DIRECTORY, INSTANCE_DIRECTORY + '\\resourcepacks', dirs_exist_ok=True)
-log_info('Added resource pack files ')
+log_info('Added resource pack files')
 
 
 # ---------------- ADD SHADER PACKS ----------------
 
 SHADER_PACKS_DIRECTORY = PROJECT_DIRECTORY + '\\6 - Shader Packs'
 shutil.copytree(SHADER_PACKS_DIRECTORY, INSTANCE_DIRECTORY + '\\shaderpacks', dirs_exist_ok=True)
-log_info('Added shader pack files ')
+log_info('Added shader pack files')
 
 if len(unused_mods) > 0:
     print()

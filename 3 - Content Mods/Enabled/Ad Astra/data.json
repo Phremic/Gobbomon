@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Botarium",
+		"Resourceful Config",
+		"Resourceful Lib"
+	]
+}
