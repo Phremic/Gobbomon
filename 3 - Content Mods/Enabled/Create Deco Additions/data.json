@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Create",
+		"Create Crafts & Additions",
+		"Create Deco"
+	]
+}

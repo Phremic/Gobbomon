@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Cobblemon",
+		"Kotlin for Forge",
+		"Patchouli"
+	]
+}

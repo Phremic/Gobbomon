@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Architectury API",
+		"Cloth Config API",
+		"Curios API"
+	]
+}

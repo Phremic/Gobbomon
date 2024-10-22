@@ -1,0 +1,8 @@
+
+["Cagerium Recaged - Common Config"]
+	#When a farm block (Terrarium, Cage, or Plate) contains a Soul Shard with a captured soul, the farm block will periodically generate loot.
+	#How long (in ticks) a farm block will wait between generating loot. (Default = 600)
+	"Generate Loot Period" = 600
+	#How many times to spawn drops when generating loot every period. This can also be interpreted as how many mobs are slain and generate drops every period. (Default = 1)
+	"Generate Loot Instances" = 1
+
