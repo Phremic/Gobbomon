@@ -3,6 +3,8 @@ import os
 import shutil
 import string
 
+ATLAUNCHER_FILENAME = 'ATLauncher.exe'
+
 enabled_mods = []
 unused_mods = []
 
@@ -16,31 +18,43 @@ def log_warning(warning_data):
 
 
 def locate_atlauncher_directory(data_filepath):
+
+    directory = ''
+
     try:
         with open(data_filepath, 'r') as data:
-            return json.load(data)['Install Directory']
+            directory = json.load(data).get('Install Directory')
     except FileNotFoundError:
         log_warning('Unable to find ATLauncher install directory data file')
     except json.JSONDecodeError:
         log_warning('Unable to read ATLauncher install directory data file')
     finally:
-        log_info('Searching for ATLauncher install directory...')
-        for letter in string.ascii_uppercase:
-            for root, dirs, files in os.walk(letter + ':\\'):
-                if ATLAUNCHER_FILENAME in files:
-                    log_info('Found ATLauncher install at the following location: ' + root)
-                    while True:
-                        match input('Would you like to use this as your ATLauncher install directory? (y/n) '):
-                            case 'y' | 'Y':
-                                with open(data_filepath, "w") as data:
-                                    data.write(json.dumps({'Install Directory': root}, indent=4))
-                                log_info('Stored ATLauncher install directory in data file')
-                                return root
-                            case 'n' | 'N':
-                                break
-                            case _:
-                                print('INVALID RESPONSE')
-        raise RuntimeError('Unable to load ATLauncher install directory')
+        if directory is None:
+            log_warning('ATLauncher install directory data file doesn\'t contain directory data')
+        elif not isinstance(directory, str):
+            log_warning('ATLauncher install directory data contains an invalid datatype')
+        elif len(directory) == 0:
+            log_warning('ATLauncher install directory data doesn\'t contain a valid directory')
+        else:
+            return directory
+
+    log_info('Searching for ATLauncher install directory...')
+    for letter in string.ascii_uppercase:
+        for root, dirs, files in os.walk(letter + ':\\'):
+            if ATLAUNCHER_FILENAME in files:
+                log_info('Found ATLauncher install at the following location: ' + root)
+                while True:
+                    match input('Would you like to use this as your ATLauncher install directory? (y/n) '):
+                        case 'y' | 'Y':
+                            with open(data_filepath, "w") as data:
+                                data.write(json.dumps({'Install Directory': root}, indent=4))
+                            log_info('Stored ATLauncher install directory in data file')
+                            return root
+                        case 'n' | 'N':
+                            break
+                        case _:
+                            print('INVALID RESPONSE')
+    raise RuntimeError('Unable to load ATLauncher install directory')
 
 
 def add_mod_to_instance(f_mod_name, f_project_directory, f_instances_directory):
@@ -61,24 +75,28 @@ def add_mod_to_instance(f_mod_name, f_project_directory, f_instances_directory):
         raise RuntimeError('Required mod \"' + f_mod_name + '\" is missing from project')
 
     with open(os.path.join(mod_directory, 'data.json'), 'r') as data:
-        data = json.load(data)
+        mod_data = json.load(data)
 
-        if not data['Client']:
+        if not mod_data['Client']:
             return
 
-        for dependency_mod in data['Dependencies']:
+        for dependency_mod in mod_data['Dependencies']:
             add_mod_to_instance(dependency_mod, f_project_directory, f_instances_directory)
 
         for f in os.scandir(mod_directory):
             if f.is_dir():
+                if f.name == 'config':
+                    changelog_filepath = os.path.join(mod_directory, f.name, '_changelog.txt')
+                    if not os.path.isfile(changelog_filepath):
+                        continue
                 shutil.copytree(
                     os.path.join(mod_directory, f.name),
                     os.path.join(f_instances_directory, f.name),
                     dirs_exist_ok=True)
-                if f.name == 'config':
-                    changelog_filepath = os.path.join(f_instances_directory, f.name, '_changelog.txt')
-                    if os.path.isfile(changelog_filepath):
-                        os.remove(changelog_filepath)
+
+        changelog_filepath = os.path.join(f_instances_directory, 'config', '_changelog.txt')
+        if os.path.isfile(changelog_filepath):
+            os.remove(changelog_filepath)
 
     enabled_mods.append(f_mod_name)
     log_info('Added mod: ' + f_mod_name)
@@ -98,8 +116,6 @@ PROJECT_NAME = os.path.basename(PROJECT_DIRECTORY)
 log_info('Project name: ' + PROJECT_NAME)
 
 # ---------------- FIND ATLAUNCHER DIRECTORY ----------------
-
-ATLAUNCHER_FILENAME = 'ATLauncher.exe'
 
 ATLAUNCHER_DIRECTORY = locate_atlauncher_directory(os.path.join(os.path.dirname(__file__), 'data.json'))
 log_info('ATLauncher install directory: ' + ATLAUNCHER_DIRECTORY)

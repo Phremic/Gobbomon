@@ -1,0 +1,10 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Caelus API",
+		"Curios API",
+		"Geckolib",
+		"playerAnimator"
+	]
+}
