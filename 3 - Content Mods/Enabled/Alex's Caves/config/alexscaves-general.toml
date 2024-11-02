@@ -83,7 +83,7 @@
 
 [potion-behavior]
 	#Whether the Sugar Rush changes the tick rate of the game in the area of affected players.
-	sugar_rush_slows_time = true
+	sugar_rush_slows_time = false
 
 [vanilla-changes]
 	#percent chance of bastion having a cave tablet for magnetic caves in its loot table:

@@ -1,0 +1,7 @@
+{
+	"Client": false,
+	"Server": true,
+	"Dependencies": [
+		"Almanac"
+	]
+}

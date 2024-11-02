@@ -1,0 +1,7 @@
+{
+	"Client": true,
+	"Server": false,
+	"Dependencies": [
+		"[ETF] Entity Texture Features"
+	]
+}

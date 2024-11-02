@@ -1,0 +1,12 @@
+
+-------- Change Log --------x
+
+alexscaves-client.toml
+    line 6 :: Disabled screen shake (true -> false)
+    line 10 :: Disabled nuclear bomb flash (true -> false)
+    line 20 :: Disabled ambersol blocks emitting light rays (true -> false)
+    line 22 :: Disabled irradiated glow effect (true -> false)
+    line 30 :: Disabled sugar rush screen saturation effect (true -> false)
+
+alexscaves-general.toml
+    line 86 :: Disabled sugar rush slowing game tick rate (true -> false)
