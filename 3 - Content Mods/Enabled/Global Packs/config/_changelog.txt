@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+global_data_and_resourcepacks.toml
+	line 21 :: Changed directory from "resourcepacks/" to "datapacks/"

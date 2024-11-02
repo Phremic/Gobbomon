@@ -1,0 +1,8 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"ChoiceTheorem's Overhauled Village",
+		"Iron's Spells 'n Spellbooks"
+	]
+}
