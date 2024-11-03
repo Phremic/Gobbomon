@@ -1,0 +1,10 @@
+
+-------- Change Log --------
+
+jade/hide-blocks.json
+	line 3 :: Removed all entries from hidden blocks list
+jade/hide-entities.json
+	line 3 :: Removed all entries from hidden blocks list
+jade/jade.json
+	Moved "overlayPosX" from line 36 to line 30
+	line 27 :: Changed "overlaySquare" value (false -> true)

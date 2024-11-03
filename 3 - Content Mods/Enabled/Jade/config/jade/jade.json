@@ -24,16 +24,16 @@
     "iconMode": "TOP",
     "animation": true,
     "disappearingDelay": 0.0,
-    "overlaySquare": false,
+    "overlaySquare": true,
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
+    "overlayPosX": 0.5,
     "overlayPosY": 1.0,
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
     "activeTheme": "jade:dark",
-    "themesHash": -328442023,
-    "overlayPosX": 0.5
+    "themesHash": -328442023
   },
   "formatting": {
     "modName": "§9§o%s"

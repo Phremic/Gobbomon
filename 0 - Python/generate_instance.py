@@ -26,6 +26,7 @@ def run():
         print()
         functions.log_warning('The following dependency mods included in the project are not required')
         print(unused_mods)
+        print()
 
 
 run()
