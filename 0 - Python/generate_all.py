@@ -1,1 +1,2 @@
-print('Hello World!')
+import generate_instance
+import generate_server
