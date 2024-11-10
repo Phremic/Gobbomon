@@ -13,7 +13,7 @@ splashes = false
 	#Set this to false to disable the wireframe when looking a block bound to something (spreaders, flowers, etc).
 	boundBlockWireframe = true
 	#Set this to false to disable rendering of accessories in the player.
-	accessories = false
+	accessories = true
 	#The height of the mana display bar in above the XP bar. You can change this if you have a mod that changes where the XP bar is.
 	#Range: > 0
 	manaBarHeight = 29

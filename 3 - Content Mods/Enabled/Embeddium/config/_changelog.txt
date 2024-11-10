@@ -1,0 +1,10 @@
+
+-------- Change Log --------
+
+embeddium-options.json
+	line 5 :: Disabled vignette (true -> false)
+    line 9 :: Enabled memory tracing (false -> true)
+    line 12 :: Increased CPU prerender frames (3 -> 9)
+    line 26 :: Enabled "force_disable_donation_prompts" (false -> true)
+    line 27 :: Enabled "has_cleared_donation_button" (false -> true)
+    line 28 :: Enabled "has_seen_donation_prompt" (false -> true)

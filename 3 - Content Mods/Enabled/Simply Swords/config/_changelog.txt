@@ -1,0 +1,29 @@
+
+-------- Change Log --------
+
+simplyswords_extra/loot_config.json5
+	line 18 :: Changed loot weight for weapon for given entity (0.05 -> 0.1)
+	line 19 :: Changed loot weight for weapon for given entity (0.5 -> 0.1)
+	line 20 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 21 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 22 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 23 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 24 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 25 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 26 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 27 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 28 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 29 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 30 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 31 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 32 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 33 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 34 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 35 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+	line 36 :: Changed loot weight for weapon for given entity (0.0 -> 0.01)
+simplyswords_main/loot.json5
+	line 3 :: Enabled loot in villages (false -> true)
+	line 5 :: Change value of "standardLootTableWeight" (0.009999999776482582 -> 0.01600000075995922)
+	line 5 :: Change value of "rareLootTableWeight" (0.004000000189989805 -> 0.00800000037997961)
+	line 5 :: Change value of "runicLootTableWeight" (0.007000000216066837 -> 0.012000000104308128)
+	line 5 :: Change value of "uniqueLootTableWeight" (0.0010000000474974513 -> 0.004000000189989805)

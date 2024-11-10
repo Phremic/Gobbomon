@@ -1,3 +1,8 @@
 
 -------- Change Log --------
 
+defaultoptions/keybindings.txt
+    Defined default keybindings for vanilla control options
+
+defaultoptions/options.txt
+    Defined default options for vanilla settings

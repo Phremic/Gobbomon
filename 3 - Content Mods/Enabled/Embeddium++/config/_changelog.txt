@@ -1,0 +1,12 @@
+
+-------- Change Log --------
+
+embeddium++.toml
+	line 8 :: Changed FPS display mode (ADVANCED -> OFF)
+    line 59 :: Removed Ice and Fire and Create entities from entity culling whitelist
+    line 64 :: Enabled monster culling (false -> true)
+    line 77 :: Removed Ice and Fire and Create entities from monster culling whitelist
+    line 95 :: Removed Waterframes entities from tile entity culling whitelist
+    line 109 :: Changed dynamic lights update frequency (REALTIME -> NORMAL)
+    line 157 :: Disabled moon phase affecting overworld darkness (true -> false)
+    line 175 :: Disabled overworld darkness (true -> false)

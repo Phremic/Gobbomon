@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+create-client.toml
+	line 29 :: Reduced maximum number of blocks to calculate dynamic lighting for (16384 -> 1024)
+    line 34 :: Disabled main menu config button (2 -> 0)
+    line 44 :: Disabled in-game menu config button (3 -> 0)

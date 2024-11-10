@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+createoreexcavation-server.toml
+	line 13 :: Reduced maximum extractors per ore vein (0 -> 1)
+    line 19 :: Increased vein finder accuracy (25 -> 1)
+    line 22 :: Reduced vein finder cooldown (100 -> 20)

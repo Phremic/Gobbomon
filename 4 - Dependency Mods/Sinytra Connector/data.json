@@ -1,7 +1,5 @@
 {
 	"Client": true,
 	"Server": true,
-	"Dependencies": [
-		"Forgified Fabric API"
-	]
+	"Dependencies": []
 }

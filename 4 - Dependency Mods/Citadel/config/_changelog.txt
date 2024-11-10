@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+citadel-common.toml
+	line 4 :: Disabled entity tracking (true -> false)
+    line 11 :: Disabled April fools content (true -> false)
