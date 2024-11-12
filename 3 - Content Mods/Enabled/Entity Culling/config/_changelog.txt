@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+embers-common.toml
+	Removed block entities from whitelist
+	Removed entities from whitelist
+	Removed elements from tick culling whitelist

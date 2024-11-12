@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:[]
+resourcePacks:["file/Vanilla Tweaks Textures.zip","file/Gobbomon UI.zip","file/Cubic Sun and Moon.zip","file/Crops 3D.zip","file/3D Doors Pack.zip","file/3D Blocks Pack.zip","file/3D Decorations Pack.zip","file/Fresh Animations.zip","file/Fresh Animations - Extensions.zip","file/Fresh Dungeons.zip"]
 incompatibleResourcePacks:[]
 lastServer:"localhost"
 lang:en_us

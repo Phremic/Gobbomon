@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+vinery/config.json5
+    line 3 :: Reduced the chance of a wandering trader spawning as a wine trader (50 -> 20)

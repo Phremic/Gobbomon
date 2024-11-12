@@ -61,10 +61,10 @@ def locate_atlauncher_directory():
     raise RuntimeError('Unable to load ATLauncher install directory')
 
 
-def remove_config_changelog(directory):
+def remove_changelog(directory, sub_directory):
 
     # Remove a changelog file if one exists
-    changelog_filepath = os.path.join(directory, 'config', '_changelog.txt')
+    changelog_filepath = os.path.join(directory, sub_directory, '_changelog.txt')
     if os.path.isfile(changelog_filepath):
         os.remove(changelog_filepath)
 
@@ -100,7 +100,8 @@ def add_core_files(instance_directory, core_type):
     log_info('Added core files')
 
     # Remove instance core config changelog file from new instance
-    remove_config_changelog(instance_directory)
+    remove_changelog(instance_directory, 'config')
+    remove_changelog(instance_directory, 'defaultconfigs')
 
 
 def get_mod_directory(f_mod_name, f_project_directory):
@@ -146,16 +147,17 @@ def add_mod(f_mod_name, f_enabled_mods, f_target_directory):
 
         # Add dependency mods if required
         for dependency_mod in mod_data['Dependencies']:
-            added_mods.extend(add_mod(dependency_mod, f_enabled_mods, f_target_directory))
             if dependency_mod not in added_mods:
-                if dependency_mod not in f_enabled_mods:
-                    raise RuntimeError('Required mod \"' + dependency_mod + '\" was unable to be added')
+                added_mods.extend(add_mod(dependency_mod, f_enabled_mods, f_target_directory))
+                if dependency_mod not in added_mods:
+                    if dependency_mod not in f_enabled_mods:
+                        raise RuntimeError('Required mod \"' + dependency_mod + '\" was unable to be added')
 
         # Add all mod files
         for f in os.scandir(mod_directory):
             if f.is_dir():
-                if f.name == 'config':
-                    if not os.path.isfile(os.path.join(mod_directory, 'config', '_changelog.txt')):
+                if f.name == 'config' or f.name == 'defaultconfigs':
+                    if not os.path.isfile(os.path.join(mod_directory, f.name, '_changelog.txt')):
                         continue
                 shutil.copytree(
                     os.path.join(mod_directory, f.name),
@@ -163,7 +165,8 @@ def add_mod(f_mod_name, f_enabled_mods, f_target_directory):
                     dirs_exist_ok=True)
 
         # Remove config changelog file
-        remove_config_changelog(f_target_directory)
+        remove_changelog(f_target_directory, 'config')
+        remove_changelog(f_target_directory, 'defaultconfigs')
 
     # Return list of all mods that have been added from this function call and recursive calls
     log_info('Added mod: ' + f_mod_name)

@@ -1,0 +1,8 @@
+
+-------- Change Log --------
+
+embers-common.toml
+	line 83 :: Increased the Blazing Ray damage (7.0 -> 12.0)
+	line 83 :: Increased the Blazing Ray range (96.0 -> 256.0)
+	line 83 :: Increased the Cinder Staff area (2.125 -> 4.0)
+    line 83 :: Increased the Cinder Staff projectile lifetime (160 -> 320)

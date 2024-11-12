@@ -1,0 +1,15 @@
+
+-------- Change Log --------
+
+rats-client.toml
+	line 6 :: Disabled "Synesthesia Shader" tinting the screen yellow (true -> false)
+	line 10 :: Disabled rat fart noises (true -> false)
+
+rats-client.toml
+	line 4 :: Enabled Ratlantis (false -> true)
+    line 53 :: Enabled black death constantly spawning plague rats (false -> true)
+    line 144 :: Disabled rats stealing from chests (true -> false)
+    line 148 :: Disabled rats contaminating food (true -> false)
+    line 150 :: Disabled rats digging holes (true -> false)
+    line 252 :: Increased rat litter size (1 -> 12)
+    line 255 :: Increased rat breeding cooldown (24000 -> 57600)

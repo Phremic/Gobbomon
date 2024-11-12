@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+cobblemon/main.json
+	line 9 :: Changed "pokemonSaveIntervalSeconds" value (30 -> 60)
+	line 36 :: Changed "pokemonPerChunk" value (1.0 -> 0.25)
+	line 55 :: Changed "shinyRate" value (4096.0 -> 512.0)

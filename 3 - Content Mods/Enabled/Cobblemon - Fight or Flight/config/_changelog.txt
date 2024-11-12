@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+fightorflight.json5
+    line 34 :: Reduced maximum attack damage (25.0 -> 16.0)

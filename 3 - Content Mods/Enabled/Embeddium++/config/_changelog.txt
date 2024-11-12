@@ -2,7 +2,7 @@
 -------- Change Log --------
 
 embeddium++.toml
-	line 8 :: Changed FPS display mode (ADVANCED -> OFF)
+	line 8 :: Changed FPS display mode (ADVANCED -> SIMPLE)
     line 59 :: Removed Ice and Fire and Create entities from entity culling whitelist
     line 64 :: Enabled monster culling (false -> true)
     line 77 :: Removed Ice and Fire and Create entities from monster culling whitelist

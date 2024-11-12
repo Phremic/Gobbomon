@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+entity_model_features.json
+    line 8 :: Changed physics mod patch setting ("CUSTOM" -> "VANILLA")
+    line 15 :: Reduced LOD distance (20 -> 16)

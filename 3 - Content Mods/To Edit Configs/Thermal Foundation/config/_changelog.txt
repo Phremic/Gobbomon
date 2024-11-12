@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+thermal-client.toml
+    line 10 :: Disabled festive mobs (true -> false)
+    line 12 :: Disabled festive vanilla mobs (true -> false)

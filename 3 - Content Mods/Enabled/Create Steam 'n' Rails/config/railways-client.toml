@@ -71,7 +71,7 @@
 		#[in Ticks]
 		#Journeymap train overlay update time
 		#Range: 1 ~ 600
-		updateRate = 1
+		updateRate = 20
 		#.
 		#[in Ticks]
 		#Journeymap train overlay old marker removal check time

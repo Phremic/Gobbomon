@@ -1,7 +1,7 @@
 
 [Ratlantis]
 	#If true, the ratlantis datapack will automatically be enabled when creating a new world.
-	"Ratlantis Datapack Enabled by Default" = false
+	"Ratlantis Datapack Enabled by Default" = true
 
 [Spawning]
 	#Percentage for every random tick to spawn a rat for a garbage pile.
@@ -50,7 +50,7 @@
 	#If true, a plague doctor will be converted into the Black Death when struck by lightning.
 	"Black Death Lightning Strike" = true
 	#If true, Black Death will respawn Plague Rats when it has less than the max defined Plague Rats at its command.
-	"Black Death Constantly Spawns Rats" = false
+	"Black Death Constantly Spawns Rats" = true
 	#Defines the amount of Plague Rats Black Death can have at its command at a time.
 	#Range: 0 ~ 100
 	"Black Death Max Plague Rats" = 15
@@ -141,13 +141,13 @@
 	#True if wild rats will destroy and eat crops
 	"Rats Raid Crops" = true
 	#True if wild rats will steal from chests
-	"Rats Steal From Chests" = true
+	"Rats Steal From Chests" = false
 	#True if wild rats should be allowed to climb over tall blocks, such as fences and walls.
 	"Rats Climb over Fences and Walls" = true
 	#True if wild rats contaminate food when they steal from chests
-	"Rats Contaminate Food" = true
+	"Rats Contaminate Food" = false
 	#True if rats can dig holes
-	"Rats Dig Holes" = true
+	"Rats Dig Holes" = false
 	#True if infected mobs with plague can spread it by interacting or attacking.
 	"Other Mobs can spread Plague" = true
 	#The max block hardness that rats are allowed to dig through. (Dirt = 0.5F, Cobblestone = 2.0F, Obsidian = 50.0F)
@@ -249,10 +249,10 @@
 	"Rat Cage Max Occupancy" = 4
 	#The max amount of Baby Rats will be produced when Rats breed. You will get anywhere between 1 and this number of baby rats.
 	#Range: 1 ~ 10
-	"Rat Litter Size" = 1
+	"Rat Litter Size" = 12
 	#The amount of time it takes after a rat successfully breeds for it to breed again. Time is in ticks. (24000 ticks = 1200 seconds = 20 minutes)
 	#Range: > 0
-	"Rat Breeding Cooldown" = 24000
+	"Rat Breeding Cooldown" = 57600
 	#Rats will conduct expensive CPU operations like looking for crops or chests, once every this number of ticks(with added standard deviation for servers)
 	#Range: 1 ~ 10000
 	"Rat Update Delay" = 100

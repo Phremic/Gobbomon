@@ -80,11 +80,11 @@
 		#Time in ticks to fully charge.
 		charge = 20
 		#Damage dealt by one shot.
-		damage = 7.0
+		damage = 12.0
 		#Maximum spread.
 		spread = 30.0
 		#Maximum shot distance.
-		distance = 96.0
+		distance = 256.0
 
 	[parameters.cinderStaff]
 		#Ember used up by each shot.
@@ -98,9 +98,9 @@
 		#Size of the projectile.
 		size = 17.0
 		#Area of Effect on impact.
-		aoe = 2.125
+		aoe = 4.0
 		#Maximum lifetime in ticks of projectile.
-		lifetime = 160
+		lifetime = 320
 
 	[parameters.ashen]
 

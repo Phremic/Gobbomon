@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+eidolon-common.toml
+	line 8 :: Disabled the Crucible fizzling out if waiting too long inbetween steps (false -> true)

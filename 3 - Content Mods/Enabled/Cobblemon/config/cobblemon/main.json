@@ -52,7 +52,7 @@
   "baseApricornTreeGenerationChance": 0.1,
   "ninjaskCreatesShedinja": true,
   "displayEntityLevelLabel": true,
-  "shinyRate": 512.0,
+  "shinyRate": 1024.0,
   "captureCalculator": "cobblemon",
   "playerDamagePokemon": true,
   "appleLeftoversChance": 0.025,

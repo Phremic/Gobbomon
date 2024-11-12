@@ -1,0 +1,10 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Ars Nouveau",
+		"Create",
+		"Curios API",
+		"Patchouli"
+	]
+}

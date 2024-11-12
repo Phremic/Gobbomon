@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+create_connected-common.toml
+	line 59 :: Disabled copycat blocks (true -> false)

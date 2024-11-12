@@ -1,0 +1,12 @@
+
+-------- Change Log --------
+
+ars_nouveau-client.toml
+    line 5 :: Disabled show supporter message (true -> false)
+    line 45 :: Disabled the skyweave renderer (false -> true)
+    line 47 :: Disabled transparent rendering of elements in the book GUI (true -> false)
+    line 49 :: Disabled translucent particles (false -> true)
+
+ars_nouveau-common.toml
+    line 7 :: Disabled spawning payer with a book (true -> false)
+    line 21 :: Disabled Wilden Chimera destroying blocks (true -> false)

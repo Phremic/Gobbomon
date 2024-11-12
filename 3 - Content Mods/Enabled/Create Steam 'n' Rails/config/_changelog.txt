@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+railways-client.toml
+    line 74 :: Increased train update period for Journeymap (1 -> 20)

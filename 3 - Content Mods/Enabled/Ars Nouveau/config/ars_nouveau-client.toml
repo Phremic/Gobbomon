@@ -2,7 +2,7 @@
 #Lighting
 [lights]
 	#Show the supporter message. This is set to false after the first time.
-	showSupporterMessage = true
+	showSupporterMessage = false
 	#If dynamic lights are enabled
 	lightsEnabled = false
 	#How bright the touch light is
@@ -42,9 +42,9 @@
 	#Use simplified renderer for Warp Portals
 	no_end_portal_render = false
 	#Disables the skyweave renderer. Disable if your sky is broken with shaders.
-	disable_skyweave = false
+	disable_skyweave = true
 	#Enables transparent/opaque rendering of elements in the book GUI. Disable if it leads to crash with Sodium derivatives
-	gui_transparency = true
+	gui_transparency = false
 	#Disables translucent particles. Disable if your particles are invisible with shaders.
-	opaque_particles = false
+	opaque_particles = true
 

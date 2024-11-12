@@ -1,0 +1,7 @@
+
+-------- Change Log --------
+
+oculus.properties
+	line 4 :: Disabled update message (false -> true)
+	line 6 :: Reduced shadow render distance (32 -> 12)
+	line 7 :: Defined enabled shader pack
