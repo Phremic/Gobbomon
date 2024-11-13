@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+solcarrot-server.toml
+	line 8 :: Reduced the number of hearts gained per milestone (2 -> 1)
+	line 10 :: Adjusted the milestones

@@ -26,7 +26,7 @@
 	#Whether or not creepers should be healed and become fire immune when struck by lightning. Default: true
 	betterCreeperThunderHit = true
 	#Whether or not spells such as Fireball or Fire Breath should destroy terrain or create fire. Default: false
-	spellGriefing = true
+	spellGriefing = false
 	#Whether or not the wandering trader can have magic related trades, such as ink or scrolls. Default: true
 	additionalWanderingTraderTrades = true
 	#Whether casting spells should be disabled in adventure mode. Default: false

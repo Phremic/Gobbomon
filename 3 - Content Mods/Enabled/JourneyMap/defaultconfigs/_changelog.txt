@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+journeymap-server.toml
+	line 10 :: Removed default server admin entry
