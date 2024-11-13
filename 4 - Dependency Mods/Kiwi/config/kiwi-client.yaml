@@ -9,4 +9,4 @@ debug:
   tagsTooltipAppendKeybindHint: true
   tagsPerPage: 6
   NBTTooltip: true
-suppressExperimentalSettingsWarning: false
+suppressExperimentalSettingsWarning: true

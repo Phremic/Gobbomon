@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+wizards_reborn-client.toml
+	line 114 :: Disabled panorama button (true -> false)

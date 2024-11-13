@@ -1,0 +1,10 @@
+
+-------- Change Log --------
+
+mowziesmobs-client.toml
+	line 4 :: Disabled lantern glow effect (true -> false)
+	line 6 :: Disabled Umvuthana footprints (true -> false)
+	line 8 :: Disabled camera shake (true -> false)
+	line 10 :: Disabled boss music (true -> false)
+	line 14 :: Disabled custom player animations (true -> false)
+	line 16 :: Disabled Crane heal sounds (true -> false)

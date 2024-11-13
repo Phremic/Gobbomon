@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+immersiveengineering-client.toml
+	line 28 :: Disabled VBO rendering (true -> false)

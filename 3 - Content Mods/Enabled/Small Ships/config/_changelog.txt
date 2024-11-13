@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+smallships-client.toml
+	line 23 :: Increased the maximum zoom for ships (20 -> 30)

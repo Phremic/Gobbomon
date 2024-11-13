@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+jei/jei-client.ini
+	line 5 :: Moved the search bar to the bottom center of the screen (false -> true)
+	line 57 :: Enabled low memory search mode (false -> true)

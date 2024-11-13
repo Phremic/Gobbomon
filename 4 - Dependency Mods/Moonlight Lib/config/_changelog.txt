@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+moonlight-client.toml
+	line 9 :: Disabled mipmaps (3 -> 0)

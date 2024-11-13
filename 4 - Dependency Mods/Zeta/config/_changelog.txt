@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+zeta-common.toml
+	line 11 :: Disabled hiding disabled items (true -> false)
+    line 27 :: Enabled force creative tab appending (false -> true)

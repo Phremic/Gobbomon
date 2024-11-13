@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+malum-common.toml
+	line 28 :: Disabled encyclopedia arcana drop on first undead slain (true -> false)

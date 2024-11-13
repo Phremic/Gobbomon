@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+modernfix-common.toml
+	line 2 :: Removed "jepb:jei_plugin" from blacklisted async plugins list

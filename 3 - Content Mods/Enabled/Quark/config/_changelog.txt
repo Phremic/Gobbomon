@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+quark-common.toml
+	line 3 :: Disabled 'q' button (true -> false)
