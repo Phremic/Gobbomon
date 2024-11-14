@@ -1,0 +1,9 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Geckolib",
+		"Resourceful Config",
+		"Resourceful Lib"
+	]
+}
