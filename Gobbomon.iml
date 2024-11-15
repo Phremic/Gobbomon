@@ -6,8 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/0 - Python/Python313" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0 - Python/Python313/DLLs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0 - Python/Python313/Lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0 - Python/Python313/Lib/site-packages" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (Gobbomon) (2)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
