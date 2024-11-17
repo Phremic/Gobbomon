@@ -1,0 +1,5 @@
+
+-------- Change Log --------
+
+mna-general.toml
+	line 46 :: Removed "minecraft:frog" from summon blacklist

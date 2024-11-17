@@ -5,7 +5,7 @@
   "vanillaModelHologramRenderMode_2": "OFF",
   "attemptRevertingEntityModelsAlteredByAnotherMod": true,
   "modelExportMode": "NONE",
-  "attemptPhysicsModPatch_2": "VANILLA",
+  "attemptPhysicsModPatch_2": "OFF",
   "modelUpdateFrequency": "Average",
   "entityRenderModeOverrides": {},
   "entityPhysicsModPatchOverrides": {},

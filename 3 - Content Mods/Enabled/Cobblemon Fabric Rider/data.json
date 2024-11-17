@@ -1,0 +1,7 @@
+{
+	"Client": true,
+	"Server": true,
+	"Dependencies": [
+		"Cobblemon Fabric"
+	]
+}

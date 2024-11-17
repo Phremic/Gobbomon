@@ -1,0 +1,6 @@
+
+-------- Change Log --------
+
+mna-client.toml
+	line 40 :: Disabled fancy mage lights (true -> false)
+	line 42 :: Disabled particle blur (true -> false)

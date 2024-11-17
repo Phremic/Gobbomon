@@ -3,3 +3,11 @@
 
 quark-common.toml
 	line 3 :: Disabled 'q' button (true -> false)
+	line 1652 :: Disabled variant cow textures (true -> false)
+	line 1653 :: Disabled variant pig textures (true -> false)
+	line 1654 :: Disabled variant chicken textures (true -> false)
+	line 1655 :: Disabled shiny rabbits (true -> false)
+	line 1656 :: Disabled shiny llamas (true -> false)
+	line 1657 :: Disabled shiny dolphins (true -> false)
+	line 1658 :: Disabled shiny slimes (true -> false)
+	line 1659 :: Disabled LGBT bees (true -> false)
