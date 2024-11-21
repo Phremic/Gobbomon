@@ -3,6 +3,7 @@
 
 quark-common.toml
 	line 3 :: Disabled 'q' button (true -> false)
+	line 1568 :: Disabled variant animal textures (true -> false)
 	line 1652 :: Disabled variant cow textures (true -> false)
 	line 1653 :: Disabled variant pig textures (true -> false)
 	line 1654 :: Disabled variant chicken textures (true -> false)

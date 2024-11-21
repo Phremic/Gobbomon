@@ -2,5 +2,9 @@
 -------- Change Log --------
 
 entity_model_features.json
-    line 8 :: Changed physics mod patch setting ("CUSTOM" -> "VANILLA")
-    line 15 :: Reduced LOD distance (20 -> 16)
+	line 6 :: Disabled reverting models changed by another mod (true -> false)
+	line 8 :: Changed physics mod patch setting ("CUSTOM" -> "VANILLA")
+	line 9 :: Reduced model update frequency ("Average" -> "Slow")
+    line 15 :: Reduced LOD distance (20 -> 8)
+	line 16 :: Disabled retain detail during low FPS (true -> false)
+	line 17 :: Disabled retain detail on large mobs (true -> false)

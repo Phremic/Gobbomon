@@ -1,12 +1,12 @@
 version:3465
 autoJump:false
 operatorItemsTab:true
-autoSuggestions:false
+autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 enableVsync:false
-entityShadows:false
+entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
 invertYMouse:false
@@ -30,21 +30,21 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:0.5
+gamma:0.0
 renderDistance:12
 simulationDistance:5
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
 maxFps:260
-graphicsMode:2
+graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:true
-resourcePacks:["file/Vanilla Tweaks Textures.zip","file/Gobbomon UI.zip","file/Cubic Sun and Moon.zip","file/Crops 3D.zip","file/3D Doors Pack.zip","file/3D Blocks Pack.zip","file/3D Decorations Pack.zip","file/Fresh Animations.zip","file/Fresh Animations - Extensions.zip","file/Fresh Dungeons.zip"]
+renderClouds:"true"
+resourcePacks:["vanilla","mod_resources","fabric","file/Vanilla Tweaks Textures.zip","file/Gobbomon UI.zip","file/Cubic Sun and Moon.zip","file/Crops 3D.zip","file/3D Doors Pack.zip","file/3D Blocks Pack.zip","file/3D Decorations Pack.zip","file/Fresh Animations.zip","file/Fresh Animations - Extensions.zip","file/Fresh Dungeons.zip"]
 incompatibleResourcePacks:[]
-lastServer:"localhost"
+lastServer:localhost
 lang:en_us
 soundDevice:""
 chatVisibility:0
@@ -85,7 +85,7 @@ panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
 soundCategory_master:0.5
-soundCategory_music:0.5
+soundCategory_music:0.0
 soundCategory_record:0.1
 soundCategory_weather:1.0
 soundCategory_block:1.0
