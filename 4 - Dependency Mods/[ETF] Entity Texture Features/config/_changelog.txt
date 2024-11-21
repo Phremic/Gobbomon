@@ -2,4 +2,5 @@
 -------- Change Log --------
 
 entity_texture_features.json
-    line 28 :: Disabled config button in resource pack menu ("BOTTOM_RIGHT" -> "OFF")
+    line 7 :: Reduced texture update frequency ("Fast" -> "Slow")
+	line 28 :: Disabled config button in resource pack menu ("BOTTOM_RIGHT" -> "OFF")
