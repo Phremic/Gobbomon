@@ -2,6 +2,6 @@
 	"Client": true,
 	"Server": true,
 	"Dependencies": [
-		"Cobblemon"
+		"Forgified Fabric API"
 	]
 }
