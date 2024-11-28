@@ -1,0 +1,8 @@
+{
+	"Client": true,
+	"Server": false,
+	"Dependencies": [
+		"Create",
+		"Oculus"
+	]
+}
