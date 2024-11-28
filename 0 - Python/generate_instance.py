@@ -10,7 +10,7 @@ def run():
     instance_directory = functions.generate_instance_directory('instances')
 
     # Add core instance files
-    functions.add_core_files(instance_directory, '1 - Forge Instance')
+    functions.add_core_files(instance_directory, '1 - Instance Core')
 
     # Add mods to instance
     unused_mods = functions.add_mods(instance_directory)
